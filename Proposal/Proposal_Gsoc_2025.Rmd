@@ -23,6 +23,7 @@ library(stringr)
 library(readr)
 library(knitr)
 library(pander)
+library(kableExtra)
 ```
 
 
@@ -57,9 +58,11 @@ Additionally, I've successfully completed evaluation projects that showcase my a
 
 * Email(s): mariamiftikhar127@gmail.com
 
-* Other communications channels: https://www.linkedin.com/in/mariamiftikhar/
+* Other communications channels: 
 
-mariamiftikhar97@gmail.com
+  https://www.linkedin.com/in/mariamiftikhar/
+
+  mariamiftikhar97@gmail.com
 
 # Contributor affiliation
 
@@ -69,7 +72,7 @@ mariamiftikhar97@gmail.com
 
 * Stage of completion: Graduate
 
-* Contact to verify:
+* Contact to verify: Jane Wendorff-Craps (jwendorffcraps@roosevelt.edu)
 
 # Schedule Conflicts
 
@@ -111,6 +114,7 @@ Start by establishing connections to the databases and writing queries to get th
 
 Conduct exploratory data analysis (EDA) to spot any anomalies and cross-check a sample of records with the original source data.
 
+\newpage
 
 **2. Spatial and Temporal Matching**
 
@@ -164,6 +168,7 @@ Compare the aggregated statistics with the distributions of the raw data and val
 
 Contact the mentors to review the documentation and test the vignette code in a fresh R session.
 
+\newpage
 
 **5. Package Testing and CRAN Submission**
 
@@ -212,6 +217,8 @@ Mitigation Strategy:
 - Use time-windowing techniques to connect sightings with the relevant tourism data.
 - Conduct exploratory data analysis (EDA) to uncover and address any potential biases in the matching process.
 
+\newpage
+
 3. Package Development & CRAN Submission:
 
 Challenge: 
@@ -251,6 +258,7 @@ Mitigation Strategy:
 
 By tackling these challenges head-on with organized mitigation strategies, I’m committed to achieving a successful and well-documented project outcome.
 
+\newpage
 
 # Timeline
 
@@ -265,7 +273,13 @@ df <- data.frame(
 )
 
 # Generate a Markdown table
-kable(df)
+kable(df, caption = "Fourteen Weeks Timeline.") %>%
+  column_spec(1,width = "6em") %>%
+  column_spec(2,width = "11em") %>%
+  column_spec(3,width = "8em") %>%
+  column_spec(4,width = "14em") %>%
+  row_spec(1:nrow(df), hline_after = TRUE, extra_latex_after ="\\rule{0pt}{15pt}")
+
 ```
 
 
@@ -292,6 +306,8 @@ Mitigation Strategy:
 - Utilize strong data-cleaning pipelines that automatically handle missing values.
 - Use standard R packages like dplyr, tidyr, and lubridate to make transformations smoother.
 - Keep clear documentation to track any changes made during data preprocessing.
+
+\newpage
 
 3. Spatial & Temporal Matching Complexity Risk: 
 
@@ -380,9 +396,9 @@ I aim to commit code at least 3 times a week to keep the momentum going. Each co
 
 By sticking to a consistent commit routine and tracking my progress on GitHub, I’ll make sure the development process runs smoothly.
 
+\newpage
 
 # Test
-
 
 **Describe the qualification test that you have submitted to you project mentors. If feasible, include code, details, output, and example of similar coding problems that you have solved.**
 
@@ -450,7 +466,6 @@ ggplot() +
 
 This project produced a weather dataset linked to Platypus sightings, paving the way for deeper analysis of how climate factors influence their distribution. The insights gained can play a significant role in ecological studies and conservation efforts.
 
-\newpage
 
 ## Project 2: Mapping Platypus Sightings in Australia (2024)
 
@@ -549,6 +564,4 @@ write.csv(weather_data,"weatherdata.csv")
 ### Outcome:
 
 The final spatial visualization offers a clear view of Platypus distribution across Australia, aiding researchers and ecologists in understanding their habitat preferences and movement patterns.
-
-
 
