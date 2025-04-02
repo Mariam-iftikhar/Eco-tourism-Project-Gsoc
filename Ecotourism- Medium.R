@@ -4,9 +4,10 @@ install.packages("ggplot2", dependencies = TRUE)
 install.packages("galah", dependencies = TRUE)
 install.packages("rnaturalearth", dependencies = TRUE)
 install.packages("ggspatial", dependencies = TRUE)
-install.packages("readr") 
-install.packages("GSODR")
-install.packages("geosphere")
+install.packages("readr", dependencies = TRUE) 
+install.packages("GSODR", dependencies = TRUE)
+install.packages("geosphere", dependencies = TRUE)
+install.packages("ozmaps",dependencies = TRUE)
 
 
 # Load libraries
