@@ -1,11 +1,19 @@
 ---
-title: "Eco-tourism Project-GSOC 2025"
+title: "Proposal for Eco-tourism Project – GSOC 2025"
 author: "Mariam Iftikhar"
-date: "2025-03-23"
+date: ""
 output: 
   pdf_document: 
     toc: true
-    
+header-includes:
+  - \usepackage{graphicx}  # For image inclusion
+  - \usepackage{times}     # For Times New Roman font
+  - \usepackage{titling}   # For title formatting
+  - \usepackage{sectsty}   # Allows customization of section titles
+  - \pretitle{\begin{center}\vspace{-2cm}\includegraphics[width=6cm]{C:/Users/maria/Downloads/Image.jpg}\par\huge\bfseries}
+  - \posttitle{\end{center}}
+  - \preauthor{\begin{center}\LARGE\bfseries}  # Slightly larger font for author
+  - \postauthor{\end{center}}
 ---
 
 ```{r setup, include=FALSE}
@@ -35,7 +43,8 @@ library(kableExtra)
 
 * Project short title (30 characters): Ecotourism Data Package
 
-* URL of project idea page: 
+* URL of Project Idea:
+https://github.com/rstats-gsoc/gsoc2025/wiki/ecotourism%3A-data-package-containing-tourism-records-and-endangered-wildlife-reports
 
 # Bio of Contributor
 
